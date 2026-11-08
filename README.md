@@ -6,6 +6,8 @@
 
 Type the sentence. Every correct key punches its hole pattern into the tape. Every mistake punches a red rubout.
 
+### [▶ Try it live](https://aaron1105-11.github.io/ticker-typing-test/)
+
 ![Svelte 5](https://img.shields.io/badge/Svelte-5-ff3e00?logo=svelte&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)
 ![Bundle](https://img.shields.io/badge/gzipped-~20%20KB-3346f0)
