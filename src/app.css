@@ -1,0 +1,83 @@
+:root {
+  --desk: #e3e7ee;
+  --tape: #fafbfc;
+  --tape-edge: #d0d6e1;
+  --ink: #1c2331;
+  --muted: #677085;
+  --pending: #a3abbc;
+  --feed: #d9dee8;
+  --accent: #3346f0;
+  --accent-soft: rgb(51 70 240 / 0.09);
+  --error: #d42a67;
+  --error-soft: rgb(212 42 103 / 0.13);
+
+  --ui: 'Bricolage Grotesque', system-ui, sans-serif;
+  --mono: 'Fragment Mono', ui-monospace, 'Cascadia Mono', Menlo, monospace;
+
+  color-scheme: light;
+}
+
+/* Dark values twice: once for the OS setting (unless light was chosen explicitly),
+   once for an explicit dark choice via data-theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --desk: #13161d;
+    --tape: #1c212b;
+    --tape-edge: #2a3140;
+    --ink: #e9ecf2;
+    --muted: #8a92a6;
+    --pending: #525b6d;
+    --feed: #2b3240;
+    --accent: #8293ff;
+    --accent-soft: rgb(130 147 255 / 0.12);
+    --error: #ff5e95;
+    --error-soft: rgb(255 94 149 / 0.16);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --desk: #13161d;
+  --tape: #1c212b;
+  --tape-edge: #2a3140;
+  --ink: #e9ecf2;
+  --muted: #8a92a6;
+  --pending: #525b6d;
+  --feed: #2b3240;
+  --accent: #8293ff;
+  --accent-soft: rgb(130 147 255 / 0.12);
+  --error: #ff5e95;
+  --error-soft: rgb(255 94 149 / 0.16);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--desk);
+  color: var(--ink);
+  font-family: var(--ui);
+  font-size: 17px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
